@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+git 
+# Node modules
+node_modules/
+
+# Environment files
+.env
+
+# Debug
+*.swp
+.vscode/
+
+# Build output
+dist/
+build/
