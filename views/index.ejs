@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+  <body>
+    <%- include("navbar")%>
+    <main>
+        <h1><%= title %></h1>
+        <ul>
+
+            <% for(let i=0;i<messages.length;i++){ %>
+                <li><p><%= messages[i].user %></p> <p><%= (messages[i].text.length>20)? messages[i].text.slice(0,20)+"...": messages[i].text  %></p> <p><%= messages[i].added.toLocaleDateString() %></p> <a href="/message/<%= messages[i].id %>">Click</a>  </li>
+                <% } %>
+            </ul>
+
+    </main>
+        <%- include("footer")%>
+
+    </body>
+</html>

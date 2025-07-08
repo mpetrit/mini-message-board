@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+nav,
+footer {
+  padding: 25px;
+  background-color: rgb(78, 78, 78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+nav button {
+  background-color: transparent;
+  border: none;
+  padding: 11px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+nav button:hover {
+  padding: 10px;
+  border: 1px solid white;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column;
+  padding: 15px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+li {
+  min-height: 100px;
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  max-width: 500px;
+  width: 100%;
+  font-size: larger;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 1000px;
+  line-break: auto;
+  overflow-wrap: break-word;
+}
+form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  border: 1px solid;
+  padding: 50px;
+  border-radius: 15px;
+}
+fieldset {
+  border-radius: none;
+}
+
+footer {
+  color: white;
+  width: 100%;
+}
+footer a {
+  color: rgb(253, 0, 253);
+}

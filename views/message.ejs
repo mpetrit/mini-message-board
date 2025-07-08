@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <%- include("navbar")%>
+    <main>
+      <h1>User</h1>
+
+      <section class="user-card">
+        <p>User: <%= message.user %></p>
+        <p>Message: <%= message.text %></p>
+        <p>Time added: <%= message.added.toLocaleDateString() %></p>
+      </section>
+    </main>
+    <%- include("footer")%>
+  </body>
+</html>

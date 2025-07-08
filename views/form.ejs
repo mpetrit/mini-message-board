@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <%- include("navbar")%>
+    <main>
+      <h1>Form</h1>
+      <form method="POST" action="/new">
+        <div>
+          <label for="username">User:</label>
+          <input type="text" required name="username" id="username" />
+        </div>
+        <div>
+          <label for="comment">Comment:</label>
+
+          <textarea required name="comment" id="comment"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <%- include("footer")%>
+  </body>
+</html>
